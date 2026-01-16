@@ -68,3 +68,38 @@ git commit -m "コミットメッセージ"
 ```bash
 git log
 ```
+---
+
+## やらかしたこと・学んだこと
+
+### git pull をいきなり実行して失敗
+### 発生したエラー
+```bash
+fatal: not a git repository (or any of the parent directories): .git
+```
+
+### 原因
+- Git管理されていないディレクトリ（Desktop）で git pull を実行していた
+
+### 学び
+- Gitコマンドは .git ディレクトリが存在する場所でしか使えない
+-  git status で確認する癖をつける
+
+---
+
+### git clone に README.md のURLを指定して失敗
+
+### 発生したエラー
+```bash
+fatal: repository 'https://github.com/xxx/xxx/blob/main/README.md/' not found
+```
+
+### 原因
+- ファイル単体のURLを指定していた
+- git clone はリポジトリ単位でしか実行できない
+
+### 学び
+- clone には必ず「リポジトリのURL」を指定する
+- /blob/ が含まれるURLはGit操作では使えない
+
+---
