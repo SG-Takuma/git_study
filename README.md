@@ -57,13 +57,13 @@ git status
 git add .
 ```
 
-###git commit
+### git commit
 変更を履歴として保存
 ```bash
 git commit -m "コミットメッセージ"
 ```
 
-##git log
+### git log
 コミット履歴を確認
 ```bash
 git log
